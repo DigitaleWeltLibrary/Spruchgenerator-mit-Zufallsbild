@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+}
+
+html {
+  body {
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      .content {
+        .contentlinie {
+          display: flex;
+          justify-content: space-between;
+
+          &:not(:first-child) {
+            border-top: 2px solid grey;
+          }
+
+          p {
+            font-size: 1.5rem;
+          }
+          span {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+
+            svg {
+              margin: 0.5em;
+            }
+
+            a {
+              text-decoration: none;
+
+          
+              &.loeschen {
+                fill: grey;
+                &:hover {
+                  fill: red;
+                }
+              }
+              svg {
+                height: 2em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
