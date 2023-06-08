@@ -16,6 +16,17 @@ require 'php/bhome.php';
 
 
     <main>
+        
+        <div class="newcontent">
+            <h1>Neuer Content</h1>
+            <form action="<?php $_SERVER['PHP_SELF'] ?>" method="get">
+
+                <input class="contentnew" type="text" name="newcontent" placeholder="Mein heutiger Eintrag ...." required>
+
+                <input class="senden" type="submit" value="Absenden">
+            </form>
+        </div>
+
         <div class="content">
             <?php foreach ($ergebnis as $row) : ?>
                 <span class="contentlinie">

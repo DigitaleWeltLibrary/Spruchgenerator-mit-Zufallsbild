@@ -2,18 +2,59 @@
   margin: 0;
 }
 
+$grau: rgb(128, 128, 128);
+
 html {
   body {
     main {
       max-width: 1200px;
       margin: 0 auto;
+      padding: 0 10px;
+      .newcontent {
+        min-height: 200px;
+        margin: 30px 0;
+        border-radius: 25px;
+        border: $grau 2px solid;
+        h1 {
+          text-align: center;
+          padding: 0.5em 1.5em 0 1.5em;
+          font-size: 2.5rem;
+          font-style: italic;
+          font-weight: bolder;
+        }
+        form {
+          input.contentnew {
+            height: 40px;
+            border-radius: 50px;
+            outline: none;
+            border: $grau solid 2px;
+            font-size: 1.8rem;
+            padding: 0 1em;
+            margin: 0.5em 1.5em 1.5em;
+            width: calc(100% - 5em);
+          }
+          input.senden {
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-top: 2px solid $grau;
+            border-radius: 0 0 23px 23px;
+            font-size: 1.5rem;
+            background-color: rgb($grau, 0.25);
+            cursor: pointer;
+            &:hover {
+              background-color: rgb($grau, 0.5);
+            }
+          }
+        }
+      }
       .content {
         .contentlinie {
           display: flex;
           justify-content: space-between;
 
           &:not(:first-child) {
-            border-top: 2px solid grey;
+            border-top: 2px solid $grau;
           }
 
           p {
@@ -31,11 +72,10 @@ html {
             a {
               text-decoration: none;
 
-          
               &.loeschen {
-                fill: grey;
+                fill: $grau;
                 &:hover {
-                  fill: red;
+                  fill: rgb(250, 0, 0);
                 }
               }
               svg {
