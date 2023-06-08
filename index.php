@@ -19,5 +19,7 @@ switch ($request) {
     case '/bhome':
         require_once('pages/bhome.php');
         break;
-
+        case '/login':
+            require_once('pages/login.php');
+            break;
 }

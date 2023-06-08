@@ -85,6 +85,70 @@ html {
           }
         }
       }
+      &.login {
+        min-height: 90dvh;
+        display: grid;
+        place-items: center;
+  
+        form {
+          display: flex;
+          margin: auto;
+          flex-direction: column;
+          width: 100%;
+          max-width: 500px;
+          height: auto;
+          background-color: rgb($grau, 0.2);
+          border-radius: 25px;
+          border: 2px $grau solid;
+          div {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            background-color: $grau;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              object-fit: contain;
+              width: 80%;
+              height: 80%;
+            }
+          }
+          label {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.5rem;
+            padding: 10px 5px 0 5px;
+            margin: 0 0 5px 0;
+            text-align: center;
+            input {
+              margin: 0;
+              height: 35px;
+              border-radius: 25px;
+              border: 2px $grau solid;
+              font-size: 1.5rem;
+              padding: 0 15px;
+              color: $grau;
+              outline: none;
+            }
+          }
+          input[type="submit"] {
+            background-color: rgb($grau, 0.25);
+            border: none;
+            border-radius: 0 0 23px 23px;
+            height: 50px;
+            margin: 10px 0 0 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-top: 2px $grau solid;
+            cursor: pointer;
+            &:hover {
+              background-color: rgb($grau, 0.5);
+            }
+          }
+        }
+      }
     }
   }
 }
