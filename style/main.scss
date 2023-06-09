@@ -22,10 +22,10 @@ html {
         cursor: pointer;
         color: #000;
       }
-      svg{
+      svg {
         fill: $grau;
-        &:hover{
-            fill: #000;
+        &:hover {
+          fill: #000;
         }
       }
     }
@@ -170,6 +170,21 @@ html {
               background-color: rgb($grau, 0.5);
             }
           }
+        }
+      }
+    }
+    footer {
+      position: absolute;
+      bottom: 0;
+      font-size: 16px;
+      width: 250px;
+      display: flex;
+      justify-content: space-around;
+      a {
+        text-decoration: none;
+        color: rgb(128, 128, 128);
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
