@@ -1,5 +1,6 @@
 <?php
 require './function/img.php';
+require './php/login.php';
 
 ?>
 

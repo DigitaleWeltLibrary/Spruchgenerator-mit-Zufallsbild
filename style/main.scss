@@ -6,6 +6,29 @@ $grau: rgb(128, 128, 128);
 
 html {
   body {
+    .backnav {
+      height: 70px;
+      background-color: rgb($grau, 0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10px;
+      border-bottom: $grau 4px solid;
+      a {
+        font-size: 2rem;
+        font-weight: bolder;
+        font-style: italic;
+        text-decoration: none;
+        cursor: pointer;
+        color: #000;
+      }
+      svg{
+        fill: $grau;
+        &:hover{
+            fill: #000;
+        }
+      }
+    }
     main {
       max-width: 1200px;
       margin: 0 auto;
@@ -89,7 +112,7 @@ html {
         min-height: 90dvh;
         display: grid;
         place-items: center;
-  
+
         form {
           display: flex;
           margin: auto;
