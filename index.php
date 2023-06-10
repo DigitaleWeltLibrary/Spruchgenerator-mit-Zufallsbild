@@ -31,4 +31,7 @@ switch ($request) {
     case '/settings':
         require_once('pages/edit.php');
         break;
+    case '/bilder':
+        require_once('pages/bilder.php');
+        break;
 }
