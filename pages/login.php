@@ -12,11 +12,12 @@ require './php/login.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
     <link rel="stylesheet" href="style/main.css">
-    <link rel="shortcut icon" href="assets/layout_img/<?= $tapicon ?>" type="image/x-icon">
-    <meta name="description" content="Hier findest du einen Spruch, der dir deinen Tag verbessert.">
-    <meta name="keywords" content="Affirmation, Sprüche, Spruch, Spruch des Tages">
+    <link rel="shortcut icon" href="assets/layout_img/<?= htmlspecialchars($tapicon) ?>" type="image/x-icon">
+    
+    <title>Login - <?= htmlspecialchars($pagetitle) ?></title>
+  <meta name="description" content="<?= htmlspecialchars($description) ?>">
+  <meta name="keywords" content="<?= htmlspecialchars($keywords) ?>">
 </head>
 
 <body>

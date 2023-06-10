@@ -1,5 +1,11 @@
 <?php
 
+$pagetitle = '';
+$keywords = '';
+$description = '';
+
+require_once 'php/settingsdata.php';
+
 $request = (string) $_SERVER['REQUEST_URI'];
 
 // NOTE Parameter
@@ -21,5 +27,8 @@ switch ($request) {
         break;
     case '/login':
         require_once('pages/login.php');
+        break;
+    case '/settings':
+        require_once('pages/edit.php');
         break;
 }

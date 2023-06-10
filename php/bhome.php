@@ -15,7 +15,7 @@ if (isset($_GET['id']) && $_GET['type'] === 'loeschen') {
     $loeschen->bindParam(':id', $_GET['id']);
     $loeschen->execute();
 
-    header('Location: /bhome');
+    ('Location: /bhome');
 }
 
 if (isset($_GET['newcontent'])) {

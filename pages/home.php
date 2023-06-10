@@ -11,11 +11,11 @@ require './php/img.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAGES AFFIRMATION</title>
     <link rel="stylesheet" href="style/main.css">
     <link rel="icon" href="assets/layout_img/<?= $tapicon ?>">
-    <meta name="description" content="Hier findest du einen Spruch, der dir deinen Tag verbessert.">
-    <meta name="keywords" content="Affirmation, Sprüche, Spruch, Spruch des Tages">
+    <title> <?= htmlspecialchars($pagetitle) ?></title>
+  <meta name="description" content="<?= htmlspecialchars($description) ?>">
+  <meta name="keywords" content="<?= htmlspecialchars($keywords) ?>">
 
 </head>
 
@@ -27,9 +27,9 @@ require './php/img.php';
         <?php foreach ($spruch as $row) : ?>
             <div class="spruch">
                 <span>
-                    <p><?= $row['spruch'] ?></p>
+                    <p><?= htmlspecialchars($row['spruch']) ?></p>
                 </span>
-                <img src='assets/content_img/<?= $bild ?>' alt='Bild zur Affirmation' loading='lazy'>
+                <img src='assets/content_img/<?= htmlspecialchars($bild) ?>' alt='Bild zur Affirmation' loading='lazy'>
             </div>
         <?php endforeach ?>
         <div class="btn">
