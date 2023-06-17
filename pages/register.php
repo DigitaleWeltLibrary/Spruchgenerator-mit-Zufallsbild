@@ -1,7 +1,8 @@
 <?php
-require 'function/userlogedin.php';
+if (!$pagetitle === "") require 'function/userlogedin.php';
 require './function/img.php';
 require './php/register.php';
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -20,13 +21,15 @@ require './php/register.php';
 </head>
 
 <body>
-    <?php include "template/bnav.php"; ?>
+    <?php if (isset($_SESSION['user'])) include "template/bnav.php"; ?>
     <main class="login">
-        <form  method="post">
+        <form method="post">
             <div>
                 <img src='assets/layout_img/<?= htmlspecialchars($tapicon) ?>' alt='Tapicon' loading='lazy'>
             </div>
-            <h1>Logindaten</h1>
+            <h1>
+                <?= !$pagetitle == "" ? 'Logindaten' : 'Logindaten Backend' ?>
+            </h1>
             <label for="user">User
                 <input type="text" name="user" id="" placeholder="User">
             </label>

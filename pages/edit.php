@@ -1,7 +1,8 @@
 <?php
-require 'function/userlogedin.php';
+if(!$pagetitle === "")require 'function/userlogedin.php';
 require './php/edit.php';
-require './php/img.php';
+if(!$pagetitle === "")require './php/img.php';
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -18,9 +19,12 @@ require './php/img.php';
 </head>
 
 <body>
-  <?php include "template/bnav.php"; ?>
+  <?php if(isset($_SESSION['user'])) include "template/bnav.php"; ?>
   <main class="settings">
-    <h1>Projekt Settings</h1>
+    <h1>
+      <?=  !$pagetitle == "" ? "Projekt Settings": "Projekt Grundeinstellungen" ?>
+    
+  </h1>
     <form method="post">
       <label for="titel">
         Titel

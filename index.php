@@ -2,6 +2,15 @@
 
 require 'php/jsondata.php';
 
+if ($user) {
+    require_once('pages/register.php');
+    exit;
+}
+if ($pagetitle === "") {
+    require_once('pages/edit.php');
+    exit;
+}
+
 
 $request = (string) $_SERVER['REQUEST_URI'];
 

@@ -2,7 +2,10 @@
 
 
 if (isset($_POST['titel'])) {
-    $jsonFilePath = "json/settings.json";
+
+    session_start();
+
+    $jsonFilePath = "./json/settings.json";
     $settingsdata = file_get_contents($jsonFilePath);
     $settings = json_decode($settingsdata, true);
 
@@ -18,5 +21,6 @@ if (isset($_POST['titel'])) {
 
     file_put_contents($jsonFilePath, $updatedSettingsData);
 
-    header('Location: /settings');
+    if (is_string($_SESSION['ip'])) header('Location: /settings');
+    header('Location: /');
 }

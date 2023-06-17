@@ -17,5 +17,10 @@ if (isset($_POST['user'])) {
 
     file_put_contents($jsonFilePath, $updatedSettingsData);
 
+    if ($pagetitle === "") {
+        require_once('pages/edit.php');
+        exit;
+    }
+    
     header('Location: /bhome');
 }

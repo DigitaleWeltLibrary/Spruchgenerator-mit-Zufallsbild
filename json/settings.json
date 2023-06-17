@@ -1,22 +1,22 @@
 {
-    "layoutdata": [
-        {
-            "pagetitle": "fghfgh",
-            "keywords": "Mein seo",
-            "description": "Meine BEschreibung"
-        }
-    ],
-    "footer": [
-        {
-            "impressum": "https:\/\/herzengel.at\/impressum-von-herzengel-at\/",
-            "datenschutz": "https:\/\/herzengel.at\/datenschutz\/",
-            "agbs": ""
-        }
-    ],
-    "login": [
-        {
-            "user": "hallo",
-            "password": "$2y$10$gUnR8GsUFXUro4kxgnJc4.Rt76ZAj7lvycksXixvSUOG5jd5wgwr6"
-        }
-    ]
+  "layoutdata": [
+    {
+      "pagetitle": "",
+      "keywords": "",
+      "description": ""
+    }
+  ],
+  "footer": [
+    {
+      "impressum": "",
+      "datenschutz": "",
+      "agbs": ""
+    }
+  ],
+  "login": [
+    {
+      "user": "",
+      "password": ""
+    }
+  ]
 }
