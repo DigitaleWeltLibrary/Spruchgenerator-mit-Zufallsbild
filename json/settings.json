@@ -12,5 +12,11 @@
             "datenschutz": "https:\/\/herzengel.at\/datenschutz\/",
             "agbs": ""
         }
+    ],
+    "login": [
+        {
+            "user": "user",
+            "password": "$2y$10$lb4lJF9un7SQG\/CfJ2S6xOkU7Wzj043md2KWOGMdxdw\/7\/sozwjne"
+        }
     ]
 }

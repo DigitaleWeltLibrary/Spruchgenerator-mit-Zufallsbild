@@ -1,9 +1,7 @@
 <?php
 require './function/img.php';
-require './php/login.php';
-
+require './php/register.php';
 ?>
-
 
 <!DOCTYPE html>
 <html lang="de">
@@ -15,20 +13,19 @@ require './php/login.php';
     <link rel="stylesheet" href="style/main.css">
     <link rel="shortcut icon" href="assets/layout_img/<?= htmlspecialchars($tapicon) ?>" type="image/x-icon">
 
-    <title>Login - <?= htmlspecialchars($pagetitle) ?></title>
+    <title>User - <?= htmlspecialchars($pagetitle) ?></title>
     <meta name="description" content="<?= htmlspecialchars($description) ?>">
     <meta name="keywords" content="<?= htmlspecialchars($keywords) ?>">
 </head>
 
 <body>
-
+    <?php include "template/bnav.php"; ?>
     <main class="login">
-        <form action="php/auswerten.php" method="post">
+        <form  method="post">
             <div>
                 <img src='assets/layout_img/<?= htmlspecialchars($tapicon) ?>' alt='Tapicon' loading='lazy'>
-
             </div>
-            <h1>Login</h1>
+            <h1>Logindaten</h1>
             <label for="user">User
                 <input type="text" name="user" id="" placeholder="User">
             </label>
@@ -39,17 +36,6 @@ require './php/login.php';
         </form>
 
     </main>
-    <footer>
-        <a href="https://herzengel.at/impressum-von-herzengel-at/" target="_blank">Impressum</a>
-        <a href="https://herzengel.at/datenschutz/" target="_blank">Datenschutz</a>
-        <a href="https://herzengel.at/agb-vom-herzengel-at/" target="_blank">AGB</a>
-    </footer>
 </body>
 
 </html>
-
-<?php
-
-
-
-?>
