@@ -5,5 +5,12 @@
             "keywords": "Mein seo",
             "description": "Meine BEschreibung"
         }
+    ],
+    "footer": [
+        {
+            "impressum": "https:\/\/herzengel.at\/impressum-von-herzengel-at\/",
+            "datenschutz": "https:\/\/herzengel.at\/datenschutz\/",
+            "agbs": ""
+        }
     ]
 }

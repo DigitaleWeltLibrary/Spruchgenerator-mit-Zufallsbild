@@ -37,6 +37,19 @@ require './php/img.php';
 
 
 
+      <label for="impressum">
+        Impressum
+        <input type="text" name="impressum" id="impressum" value="<?= htmlspecialchars($impressum) ?>" placeholder="URL zum Impressum" required>
+      </label>
+
+      <label for="datenschutz">
+        Datenschutz
+        <input type="text" name="datenschutz" id="datenschutz" value="<?= htmlspecialchars($datenschutz) ?>" placeholder="URL zum Datenschutz" required>
+      </label>
+      <label for="agbs">
+        AGBs
+        <input type="text" name="agbs" id="agbs" value="<?= htmlspecialchars($agbs) ?>" placeholder="URL zu den AGBs">
+      </label>
       <input type="submit" value="Einstellungen speichern" class="senden">
     </form>
   </main>

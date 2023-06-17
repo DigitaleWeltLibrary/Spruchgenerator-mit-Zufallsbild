@@ -36,11 +36,7 @@ require './php/img.php';
             <a href="JavaScript:location.reload()"><button>Neue Affirmation</button></a>
         </div>
     </main>
-    <footer>
-        <a href="https://herzengel.at/impressum-von-herzengel-at/" target="_blank">Impressum</a>
-        <a href="https://herzengel.at/datenschutz/" target="_blank">Datenschutz</a>
-        <a href="https://herzengel.at/agb-vom-herzengel-at/" target="_blank">AGB</a>
-    </footer>
+    <?php include("template/footer.php"); ?>
 </body>
 
 </html>
