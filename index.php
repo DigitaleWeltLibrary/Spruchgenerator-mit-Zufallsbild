@@ -29,6 +29,6 @@ switch ($request) {
         require_once('pages/edit.php');
         break;
     case '/imgs':
-        require_once('pages/bilder.php');
+        require_once('pages/imgs.php');
         break;
 }
