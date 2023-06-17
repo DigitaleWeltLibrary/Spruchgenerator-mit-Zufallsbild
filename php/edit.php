@@ -1,17 +1,18 @@
 <?php
 
+
 if (isset($_POST['titel'])) {
-    $file = 'php/settingsdata.php';
-    $lines = file($file);
+    $jsonFilePath = "json/settings.json";
+    $settingsdata = file_get_contents($jsonFilePath);
+    $settings = json_decode($settingsdata, true);
 
-    $lines[3] = "\$pagetitle ='" . trim($_POST['titel']) . "';";
+    $settings['layoutdata'][0]['pagetitle'] = trim($_POST['titel']);
+    $settings['layoutdata'][0]['keywords'] = trim($_POST['keywords']);
+    $settings['layoutdata'][0]['description'] = trim($_POST['description']);
 
-    $lines[4] = "\$keywords ='" .  trim($_POST['keywords']) . "';";
+    $updatedSettingsData = json_encode($settings, JSON_PRETTY_PRINT);
 
-    $lines[5] = "\$description ='" .  trim($_POST['description']) . "';";
+    file_put_contents($jsonFilePath, $updatedSettingsData);
 
-    $fileHandle = fopen($file, 'w');
-    fwrite($fileHandle, implode('', $lines));
-    fclose($fileHandle);
     header('Location: /settings');
 }

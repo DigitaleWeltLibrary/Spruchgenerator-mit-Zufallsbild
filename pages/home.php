@@ -14,14 +14,14 @@ require './php/img.php';
     <link rel="stylesheet" href="style/main.css">
     <link rel="icon" href="assets/layout_img/<?= $tapicon ?>">
     <title> <?= htmlspecialchars($pagetitle) ?></title>
-  <meta name="description" content="<?= htmlspecialchars($description) ?>">
-  <meta name="keywords" content="<?= htmlspecialchars($keywords) ?>">
+    <meta name="description" content="<?= htmlspecialchars($description) ?>">
+    <meta name="keywords" content="<?= htmlspecialchars($keywords) ?>">
 
 </head>
 
 <body>
     <header>
-        <h1>Tages Affirmation</h1>
+        <h1><?= htmlspecialchars($pagetitle) ?></h1>
     </header>
     <main class="home">
         <?php foreach ($spruch as $row) : ?>

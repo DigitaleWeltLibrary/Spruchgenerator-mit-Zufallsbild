@@ -1,10 +1,7 @@
 <?php
 
-$pagetitle = '';
-$keywords = '';
-$description = '';
+require 'php/jsondata.php';
 
-require_once 'php/settingsdata.php';
 
 $request = (string) $_SERVER['REQUEST_URI'];
 
@@ -31,7 +28,7 @@ switch ($request) {
     case '/settings':
         require_once('pages/edit.php');
         break;
-    case '/bilder':
+    case '/imgs':
         require_once('pages/bilder.php');
         break;
 }
