@@ -1,4 +1,5 @@
 <?php
+require 'function/userlogedin.php';
 require './function/img.php';
 require './php/register.php';
 ?>

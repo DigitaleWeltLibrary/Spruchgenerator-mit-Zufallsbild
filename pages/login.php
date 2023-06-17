@@ -23,7 +23,7 @@ require './php/login.php';
 <body>
 
     <main class="login">
-        <form action="php/auswerten.php" method="post">
+        <form  method="post">
             <div>
                 <img src='assets/layout_img/<?= htmlspecialchars($tapicon) ?>' alt='Tapicon' loading='lazy'>
 
