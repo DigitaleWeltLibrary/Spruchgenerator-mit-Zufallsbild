@@ -1,7 +1,7 @@
 <?php
 
 //NOTE function bilder
-function tapicon($tapicon)
+function tapicon(array $tapicon):string
 {
     $type = explode('.', $tapicon[2]);
     if ($type === 'tapicon') return $tapicon[2];
@@ -12,3 +12,5 @@ function tapicon($tapicon)
 //NOTE tapicon img
 $imgdir = scandir('assets/layout_img/');
 $tapicon = tapicon($imgdir);
+
+

@@ -11,7 +11,7 @@ require './php/img.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backend</title>
     <link rel="stylesheet" href="style/main.css">
-    <link rel="icon" href="assets/layout_img/<?= $tapicon ?>">
+    <link rel="icon" href="assets/layout_img/<?= htmlspecialchars($tapicon) ?>">
 </head>
 
 <body>

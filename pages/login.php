@@ -14,10 +14,10 @@ require './php/login.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
     <link rel="shortcut icon" href="assets/layout_img/<?= htmlspecialchars($tapicon) ?>" type="image/x-icon">
-    
+
     <title>Login - <?= htmlspecialchars($pagetitle) ?></title>
-  <meta name="description" content="<?= htmlspecialchars($description) ?>">
-  <meta name="keywords" content="<?= htmlspecialchars($keywords) ?>">
+    <meta name="description" content="<?= htmlspecialchars($description) ?>">
+    <meta name="keywords" content="<?= htmlspecialchars($keywords) ?>">
 </head>
 
 <body>
@@ -25,7 +25,7 @@ require './php/login.php';
     <main class="login">
         <form action="php/auswerten.php" method="post">
             <div>
-                <img src='assets/layout_img/<?= $tapicon ?>' alt='Tapicon' loading='lazy'>
+                <img src='assets/layout_img/<?= htmlspecialchars($tapicon) ?>' alt='Tapicon' loading='lazy'>
 
             </div>
             <label for="user">User

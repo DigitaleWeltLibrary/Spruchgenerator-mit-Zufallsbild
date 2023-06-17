@@ -31,4 +31,7 @@ switch ($request) {
     case '/imgs':
         require_once('pages/imgs.php');
         break;
+        case '/layout':
+            require_once('pages/layout.php');
+            break;
 }

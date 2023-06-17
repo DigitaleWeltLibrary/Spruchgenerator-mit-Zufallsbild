@@ -13,7 +13,7 @@ require './php/img.php';
   <meta name="description" content="<?= htmlspecialchars($description) ?>">
   <meta name="keywords" content="<?= htmlspecialchars($keywords) ?>">
   <link rel="stylesheet" href="style/main.css">
-  <link rel="icon" href="assets/layout_img/<?= htmlspecialchars($tapicon) ?>">
+  <link rel="icon" href="assets/layout_img/<?= htmlspecialchars(htmlspecialchars($tapicon)) ?>">
 </head>
 
 <body>
