@@ -17,7 +17,7 @@ require './php/img.php';
 </head>
 
 <body>
-
+  <?php include "template/bnav.php"; ?>
   <main class="settings">
     <h1>Projekt Settings</h1>
     <form method="post">

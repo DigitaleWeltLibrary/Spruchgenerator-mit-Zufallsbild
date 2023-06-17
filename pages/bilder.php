@@ -18,6 +18,7 @@ require './php/img.php';
 </head>
 
 <body>
+    <?php include "template/bnav.php"; ?>
     <main class="bilder">
         <div class="bilderloeschen">
             <?php for ($i = 2; $i <= $count; $i++) : ?>
