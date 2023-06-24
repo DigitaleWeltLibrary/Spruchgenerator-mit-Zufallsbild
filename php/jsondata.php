@@ -9,4 +9,4 @@ $description = $data['layoutdata'][0]['description'];
 $impressum = $data['footer'][0]['impressum'];
 $datenschutz = $data['footer'][0]['datenschutz'];
 $agbs = $data['footer'][0]['agbs'];
-$user = $data['login'][0]['user'] == "";
+$user = $data['login'][0]['user'];
