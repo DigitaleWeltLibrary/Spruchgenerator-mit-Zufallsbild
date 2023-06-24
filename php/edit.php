@@ -21,6 +21,6 @@ if (isset($_POST['titel'])) {
 
     file_put_contents($jsonFilePath, $updatedSettingsData);
 
-    if (is_string($_SESSION['ip'])) header('Location: /settings');
+    if (!isset($_SESSION['user'])) header('Location: /settings');
     header('Location: /');
 }

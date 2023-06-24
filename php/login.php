@@ -14,7 +14,6 @@ if (isset($_POST['user']) && isset($_POST['password'])) {
     $password = trim($_POST['password']);
 
     if (password_verify($password, $datapassword) && $user === $datauser) {
-        $_SESSION['ip'] = $_SERVER['REMOTE_ADDR'];
         $_SESSION['user'] = $user;
         header('Location: /bhome');
         exit;

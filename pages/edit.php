@@ -1,7 +1,7 @@
 <?php
 if(!$pagetitle === "")require 'function/userlogedin.php';
 require './php/edit.php';
-if(!$pagetitle === "")require './php/img.php';
+if(!$pagetitle === "") require './function/img.php';
 session_start();
 ?>
 

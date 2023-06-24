@@ -1,14 +1,13 @@
 <?php
 
 //NOTE function bilder
-function tapicon($tapicon)
+function getpicture($dir, $imgwant)
 {
-    $type = explode('.', $tapicon[2]);
-    if ($type === 'tapicon') return $tapicon[2];
-    return $tapicon[3];
+    if (file_exists($dir . $imgwant . '.jpg')) return $imgwant . '.jpg';
+    if (file_exists($dir . $imgwant . '.png')) return $imgwant . '.png';
 }
 
 
+
 //NOTE tapicon img
-$imgdir = scandir('assets/layout_img/');
-$tapicon = tapicon($imgdir);
+ $tapicon = getpicture('assets/layout_img/', 'tapicon');

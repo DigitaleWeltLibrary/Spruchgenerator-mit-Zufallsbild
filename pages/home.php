@@ -1,7 +1,7 @@
 <?php
 require './db/connection.php';
 require './php/home.php';
-require './php/img.php';
+require './function/img.php';
 ?>
 
 <!DOCTYPE html>

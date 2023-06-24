@@ -2,7 +2,7 @@
 require 'function/userlogedin.php';
 require './db/connection.php';
 require './php/imgs.php';
-require './php/img.php';
+require './function/img.php';
 ?>
 
 <!DOCTYPE html>
