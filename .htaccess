@@ -1,0 +1,22 @@
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # img
+  ExpiresByType assets/img/jpg "access plus 1 week"
+  ExpiresByType assets/img/png "access plus 1 week"
+  ExpiresByType assets/img/svg "access plus 1 week"
+
+  # Fonts
+  ExpiresByType assets/font/woff2 "access plus 1 week"
+  ExpiresByType assets/font/woff "access plus 1 week"
+
+  # CSS, JavaScript
+  #ExpiresByType style/css "access plus 1 week"
+  ExpiresByType js/js "access plus 1 week"
+
+</IfModule>
+
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^ index.php [L]
