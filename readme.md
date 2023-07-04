@@ -5,7 +5,7 @@ Diese Zeile im Terminal ausführen:
 
 
 ```
-git clone https://github.com/DigitaleWeltLibrary/spruch_CMD.git
+git clone https://github.com/DigitaleWeltLibrary/Spruchgenerator-mit-Zufallsbild.git
 ```
 
 Dateien auf den Server hochladen
@@ -31,6 +31,13 @@ Dateien auf den Server hochladen
 
 
 - Durch das Klicken auf das Symbol mit dem Pfeil nach rechts loggen Sie sich aus
+
+
+# Wichtige Änderungen vor der Veröffentlichung
+
+Bevor Sie das Projekt online nutzen können, sollten Sie sich vergewissern, dass in Ihren Datenschutz Google Fonts (lokales Hosting) angeführt ist, so wie auch die Nutzung von SVG-Icons von Font Awesome.
+
+Beispielbilder wie auch Texte müssen vor der Veröffentlichung entfernt werden!
 
 
 [Meine Website](https://www.digitaleweltlibrary.at/) & [mein YT-Kanal](https://www.youtube.com/@DigitaleWeltLibrary)
