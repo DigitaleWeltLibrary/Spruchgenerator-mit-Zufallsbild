@@ -11,7 +11,7 @@
   ExpiresByType assets/font/woff "access plus 1 week"
 
   # CSS, JavaScript
-  #ExpiresByType style/css "access plus 1 week"
+  ExpiresByType style/css "access plus 1 week"
   ExpiresByType js/js "access plus 1 week"
 
 </IfModule>
