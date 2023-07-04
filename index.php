@@ -2,14 +2,15 @@
 
 require 'php/jsondata.php';
 
- if ($user === "") {
+//NOTE nur bei neuer Installation
+if ($user === "") {
     require_once('pages/register.php');
     exit;
 }
 if ($pagetitle === "") {
     require_once('pages/edit.php');
     exit;
-} 
+}
 
 
 $request = (string) $_SERVER['REQUEST_URI'];
@@ -21,29 +22,19 @@ if (str_contains($request, '?')) {
     $request = (string) substr($request, 0, $weg);
 }
 
-switch ($request) {
-        //NOTE home
-    case '':
-    case '/':
-    default:
-        require_once('pages/home.php');
-        break;
-    case '/bhome':
-        require_once('pages/bhome.php');
-        break;
-    case '/login':
-        require_once('pages/login.php');
-        break;
-    case '/settings':
-        require_once('pages/edit.php');
-        break;
-    case '/imgs':
-        require_once('pages/imgs.php');
-        break;
-    case '/layout':
-        require_once('pages/layout.php');
-        break;
-    case '/register':
-        require_once('pages/register.php');
-        break;
-}
+//NOTE router
+
+$page = match ($request) {
+    '' => 'home.php',
+    '/' => 'home.php',
+    '/bhome' => 'bhome.php',
+    '/login' => 'login.php',
+    '/settings' => 'edit.php',
+    '/imgs' => 'imgs.php',
+    '/layout' => 'imgs.php',
+    '/register' => 'register.php',
+    default => 'home.php'
+};
+
+//NOTE Seite einfügen
+require 'pages/' . $page;
