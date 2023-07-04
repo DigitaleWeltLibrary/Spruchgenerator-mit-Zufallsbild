@@ -22,7 +22,7 @@ require './php/login.php';
 <body>
 
     <main class="login">
-        <form  method="post">
+        <form method="post">
             <div>
                 <img src='assets/layout_img/<?= htmlspecialchars($tapicon) ?>' alt='Tapicon' loading='lazy'>
 
@@ -38,11 +38,7 @@ require './php/login.php';
         </form>
 
     </main>
-    <footer>
-        <a href="https://herzengel.at/impressum-von-herzengel-at/" target="_blank">Impressum</a>
-        <a href="https://herzengel.at/datenschutz/" target="_blank">Datenschutz</a>
-        <a href="https://herzengel.at/agb-vom-herzengel-at/" target="_blank">AGB</a>
-    </footer>
+    <?php include 'template/footer.php'; ?>
 </body>
 
 </html>
