@@ -2,7 +2,7 @@
 
 session_start();
 
-
+//NOTE Log-in
 if (isset($_POST['user']) && isset($_POST['password'])) {
     $settingsdata = file_get_contents("json/settings.json");
     $data = json_decode($settingsdata, true);
@@ -20,7 +20,7 @@ if (isset($_POST['user']) && isset($_POST['password'])) {
     }
 }
 
-//NOTE log out
+//NOTE Log-out
 if (isset($_GET['action'])) {
     session_unset();
     header('Location: /');

@@ -8,8 +8,8 @@ $maxid->execute();
 $ergebnis = $maxid->fetchAll();
 
 
+//NOTE spruch löschen
 if (isset($_GET['id']) && $_GET['type'] === 'loeschen') {
-    //NOTE spruch löschen
     $loeschenid = "DELETE FROM sprueche WHERE id=:id";
     $loeschen = $verbindung->prepare($loeschenid);
     $loeschen->bindParam(':id', $_GET['id']);
@@ -18,8 +18,8 @@ if (isset($_GET['id']) && $_GET['type'] === 'loeschen') {
     ('Location: /bhome');
 }
 
+//NOTE spruch neu
 if (isset($_GET['newcontent'])) {
-    //NOTE spruch neu
 
 
     $senden = "INSERT INTO sprueche (spruch) VALUES (:spruch)";

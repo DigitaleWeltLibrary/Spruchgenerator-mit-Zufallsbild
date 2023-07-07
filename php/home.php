@@ -10,8 +10,8 @@ $roundnumber = rand(2, $imgs);
 
 $bild = $dircontent[$roundnumber];
 
+//NOTE Anzahl der Sprüche
 if (!isset($_SESSION['max_id'])) {
-    //NOTE spruch
     $SELECT = "SELECT max(id)
 FROM sprueche";
     $maxid = $verbindung->prepare($SELECT);
@@ -23,6 +23,7 @@ FROM sprueche";
 
 $id = rand(2, $_SESSION['max_id']);
 
+// NOTE Abfrage Spruch
 $SELECT = "SELECT spruch
 FROM sprueche WHERE id = :id";
 $maxid = $verbindung->prepare($SELECT);

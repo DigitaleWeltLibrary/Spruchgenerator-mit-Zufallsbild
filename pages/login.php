@@ -42,9 +42,3 @@ require './php/login.php';
 </body>
 
 </html>
-
-<?php
-
-
-
-?>

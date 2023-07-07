@@ -1,5 +1,6 @@
 <?php
 
+//NOTE JSON Daten abfragen
 $settingsdata = file_get_contents("json/settings.json");
 $data = json_decode($settingsdata, true);
 

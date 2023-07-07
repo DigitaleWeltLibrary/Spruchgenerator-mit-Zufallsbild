@@ -58,11 +58,6 @@ session_start();
       <input type="submit" value="Einstellungen speichern" class="senden">
     </form>
   </main>
-
-
-
-
-
 </body>
 
 </html>

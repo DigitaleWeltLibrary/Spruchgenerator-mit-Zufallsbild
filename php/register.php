@@ -1,5 +1,6 @@
 <?php
 
+//NOTE User anlegen
 if (isset($_POST['user'])) {
     $jsonFilePath = "json/settings.json";
     $settingsdata = file_get_contents($jsonFilePath);
@@ -21,6 +22,6 @@ if (isset($_POST['user'])) {
         require_once('pages/edit.php');
         exit;
     }
-    
+
     header('Location: /bhome');
 }

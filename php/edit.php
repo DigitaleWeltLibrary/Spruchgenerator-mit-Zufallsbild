@@ -1,6 +1,6 @@
 <?php
 
-
+//NOTE DATA in JSON
 if (isset($_POST['titel'])) {
 
     session_start();

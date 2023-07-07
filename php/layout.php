@@ -14,6 +14,7 @@ $header = headerimg($imgdir);
 $headerimg = $imgdir[$header];
 
 
+//NOTE header oder Tapicon aktualisieren
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_FILES['tapicon'])) {
         unlink("assets/layout_img/" . $tapicon);
